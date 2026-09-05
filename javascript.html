@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Notes | Azhar Ansari</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="skill-notes-page">
+
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Skills
+        </a>
+
+        <header class="skill-notes-header">
+
+            <div class="skill-notes-icon">
+                <i class="fa-brands fa-js"></i>
+            </div>
+
+            <h1>JavaScript</h1>
+
+            <p>
+                Learn the fundamentals of JavaScript, from variables and
+                functions to DOM manipulation and interactive web development.
+            </p>
+
+        </header>
+
+
+        <section class="skill-notes-content">
+
+            <h2>JavaScript Notes</h2>
+
+
+            <div class="note-card">
+
+                <h3>What is JavaScript?</h3>
+
+                <p>
+                    JavaScript is a programming language used to make web
+                    pages interactive and dynamic. It can respond to user
+                    actions, update content, handle events and communicate
+                    with web APIs.
+                </p>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Why is JavaScript used?</h3>
+
+                <p>
+                    JavaScript is used to create interactive websites,
+                    validate forms, manipulate page content, handle user
+                    events, create animations and build modern web
+                    applications.
+                </p>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Variables</h3>
+
+                <p>
+                    Variables are used to store data. JavaScript provides
+                    <code>let</code>, <code>const</code> and <code>var</code>
+                    for declaring variables.
+                </p>
+
+                <pre><code>
+let name = "Azhar";
+const age = 21;
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Data Types</h3>
+
+                <p>
+                    Common JavaScript data types include String, Number,
+                    Boolean, Undefined, Null, Object and BigInt.
+                </p>
+
+                <pre><code>
+let name = "Azhar";
+let age = 21;
+let isStudent = true;
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Functions</h3>
+
+                <p>
+                    Functions are reusable blocks of code designed to perform
+                    a specific task.
+                </p>
+
+                <pre><code>
+function greet(name) {
+    return "Hello " + name;
+}
+
+console.log(greet("Azhar"));
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>DOM Manipulation</h3>
+
+                <p>
+                    The Document Object Model (DOM) allows JavaScript to
+                    access and modify HTML elements dynamically.
+                </p>
+
+                <pre><code>
+document.getElementById("title").textContent =
+    "Welcome to my website";
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Events</h3>
+
+                <p>
+                    Events allow JavaScript to respond to user actions such
+                    as clicks, keyboard input, mouse movement and form
+                    submission.
+                </p>
+
+                <pre><code>
+button.addEventListener("click", function () {
+    alert("Button clicked!");
+});
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Arrays</h3>
+
+                <p>
+                    Arrays are used to store multiple values in a single
+                    variable.
+                </p>
+
+                <pre><code>
+const skills = [
+    "HTML5",
+    "CSS3",
+    "JavaScript"
+];
+
+console.log(skills[0]);
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Objects</h3>
+
+                <p>
+                    Objects store data in key-value pairs and are commonly
+                    used to represent real-world entities.
+                </p>
+
+                <pre><code>
+const student = {
+    name: "Azhar",
+    age: 21,
+    role: "B.Tech Student"
+};
+
+console.log(student.name);
+                </code></pre>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>Simple Example</h3>
+
+                <pre><code>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+</head>
+<body>
+
+    <h1 id="message">Hello</h1>
+
+    <button onclick="changeMessage()">
+        Click Me
+    </button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").textContent =
+                "JavaScript is working!";
+        }
+    </script>
+
+</body>
+</html>
+                </code></pre>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
