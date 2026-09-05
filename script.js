@@ -154,16 +154,3 @@ if (contactForm && submitButton && formStatus) {
 
 }
 
-// Open and close skill notes on click/touch
-
-document.querySelectorAll(".skill-card").forEach(card => {
-
-    const notes = card.querySelector(".skill-topics");
-
-    if (!notes) return;
-
-    card.addEventListener("click", () => {
-        card.classList.toggle("active");
-    });
-
-});
