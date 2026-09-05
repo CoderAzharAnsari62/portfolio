@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>React Notes | Azhar Ansari</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="react-notes-page">
+
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Skills
+        </a>
+
+        <header class="skill-notes-header">
+
+            <div class="skill-notes-icon">
+                <i class="fa-brands fa-react"></i>
+            </div>
+
+            <h1>React</h1>
+
+            <p>
+                Learn the fundamentals of React, including components,
+                props, state, events and modern frontend development.
+            </p>
+
+        </header>
+
+        <section class="skill-notes-content">
+
+            <h2>React Notes</h2>
+
+            <div class="note-card">
+                <h3>What is React?</h3>
+                <p>
+                    React is a JavaScript library used to build interactive
+                    and reusable user interfaces. It is commonly used for
+                    modern frontend web applications.
+                </p>
+            </div>
+
+            <div class="note-card">
+                <h3>Why is React used?</h3>
+                <p>
+                    React helps developers create reusable components,
+                    manage application state and build dynamic user
+                    interfaces efficiently.
+                </p>
+            </div>
+
+            <div class="note-card">
+                <h3>Components</h3>
+                <p>
+                    Components are reusable building blocks of a React
+                    application. A component can contain its own structure,
+                    logic and styling.
+                </p>
+
+                <pre><code>
+function Welcome() {
+    return &lt;h1&gt;Hello, Azhar!&lt;/h1&gt;;
+}
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>JSX</h3>
+                <p>
+                    JSX is a syntax extension for JavaScript that allows
+                    developers to write HTML-like code inside JavaScript.
+                </p>
+
+                <pre><code>
+const element = &lt;h1&gt;Hello World&lt;/h1&gt;;
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Props</h3>
+                <p>
+                    Props are used to pass data from one component to another.
+                    They allow components to receive information from their
+                    parent component.
+                </p>
+
+                <pre><code>
+function User({ name }) {
+    return &lt;h2&gt;Hello {name}&lt;/h2&gt;;
+}
+
+function App() {
+    return &lt;User name="Azhar" /&gt;;
+}
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>State</h3>
+                <p>
+                    State is data managed inside a React component. When
+                    state changes, React can update the user interface.
+                </p>
+
+                <pre><code>
+import { useState } from "react";
+
+function Counter() {
+    const [count, setCount] = useState(0);
+
+    return (
+        &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+            Count: {count}
+        &lt;/button&gt;
+    );
+}
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Events</h3>
+                <p>
+                    React supports events such as clicks, keyboard input
+                    and form submission. Event handlers are used to respond
+                    to user actions.
+                </p>
+
+                <pre><code>
+function Button() {
+    function handleClick() {
+        alert("Button clicked!");
+    }
+
+    return &lt;button onClick={handleClick}&gt;Click Me&lt;/button&gt;;
+}
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Conditional Rendering</h3>
+                <p>
+                    Conditional rendering allows React to display different
+                    content depending on a condition.
+                </p>
+
+                <pre><code>
+function Message({ isLoggedIn }) {
+    return (
+        &lt;div&gt;
+            {isLoggedIn ? "Welcome!" : "Please log in."}
+        &lt;/div&gt;
+    );
+}
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Lists and Keys</h3>
+                <p>
+                    React can render lists using JavaScript array methods.
+                    Keys help React identify individual elements in a list.
+                </p>
+
+                <pre><code>
+const skills = ["HTML5", "CSS3", "JavaScript"];
+
+function Skills() {
+    return (
+        &lt;ul&gt;
+            {skills.map((skill) =&gt; (
+                &lt;li key={skill}&gt;{skill}&lt;/li&gt;
+            ))}
+        &lt;/ul&gt;
+    );
+}
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Simple Example</h3>
+
+                <pre><code>
+import { useState } from "react";
+
+function App() {
+    const [message, setMessage] = useState("Hello");
+
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;{message}&lt;/h1&gt;
+
+            &lt;button onClick={() =&gt; setMessage("React is working!")}&gt;
+                Click Me
+            &lt;/button&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default App;
+                </code></pre>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
