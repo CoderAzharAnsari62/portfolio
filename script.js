@@ -154,7 +154,7 @@ if (contactForm && submitButton && formStatus) {
 
 }
 
-// Skill card click/touch
+// Open and close skill notes on click/touch
 
 document.querySelectorAll(".skill-card").forEach(card => {
 
