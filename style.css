@@ -42,16 +42,12 @@ body {
     color: var(--text);
 
     background:
-        radial-gradient(
-            circle at 10% 8%,
+        radial-gradient(circle at 10% 8%,
             rgba(212, 175, 55, 0.10),
-            transparent 25rem
-        ),
-        radial-gradient(
-            circle at 90% 20%,
+            transparent 25rem),
+        radial-gradient(circle at 90% 20%,
             rgba(212, 175, 55, 0.07),
-            transparent 28rem
-        ),
+            transparent 28rem),
         var(--bg);
 
     overflow-x: hidden;
@@ -64,23 +60,17 @@ body::before {
     pointer-events: none;
 
     background-image:
-        linear-gradient(
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
             rgba(255, 255, 255, 0.018) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.018) 1px,
-            transparent 1px
-        );
+            transparent 1px);
 
     background-size: 42px 42px;
 
-    mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 85%
-    );
+    mask-image: linear-gradient(to bottom,
+            black,
+            transparent 85%);
 }
 
 img {
@@ -225,11 +215,9 @@ section {
     width: 0;
     height: 2px;
 
-    background: linear-gradient(
-        90deg,
-        var(--primary),
-        var(--primary-2)
-    );
+    background: linear-gradient(90deg,
+            var(--primary),
+            var(--primary-2));
 
     border-radius: 99px;
 
@@ -254,8 +242,7 @@ section {
     display: grid;
 
     grid-template-columns:
-        1.08fr
-        0.92fr;
+        1.08fr 0.92fr;
 
     align-items: center;
 
@@ -309,11 +296,9 @@ section {
 .home h1 {
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: clamp(
-        3.5rem,
-        7vw,
-        6.1rem
-    );
+    font-size: clamp(3.5rem,
+            7vw,
+            6.1rem);
 
     line-height: 0.96;
 
@@ -324,11 +309,9 @@ section {
 
 .home h1 span {
     background:
-        linear-gradient(
-            100deg,
+        linear-gradient(100deg,
             var(--primary),
-            var(--primary-2)
-        );
+            var(--primary-2));
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -339,11 +322,9 @@ section {
 .home h2 {
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: clamp(
-        1.25rem,
-        2.4vw,
-        1.75rem
-    );
+    font-size: clamp(1.25rem,
+            2.4vw,
+            1.75rem);
 
     font-weight: 500;
 
@@ -456,12 +437,10 @@ section {
     border-radius: 50%;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--primary),
             var(--primary-2),
-            var(--primary)
-        );
+            var(--primary));
 
     box-shadow:
         0 0 80px rgba(212, 175, 55, 0.18);
@@ -500,8 +479,7 @@ section {
     border-color: rgba(212, 175, 55, 0.12);
 
     transform:
-        rotate(25deg)
-        scaleY(0.72);
+        rotate(25deg) scaleY(0.72);
 }
 
 .floating-card {
@@ -550,11 +528,9 @@ section {
 
 .about {
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             #0c0c0c,
-            #050505
-        );
+            #050505);
 }
 
 .about-grid {
@@ -565,8 +541,7 @@ section {
     display: grid;
 
     grid-template-columns:
-        0.9fr
-        1.15fr;
+        0.9fr 1.15fr;
 
     gap: 75px;
 
@@ -586,11 +561,9 @@ section {
     border-radius: 28px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             rgba(212, 175, 55, 0.95),
-            rgba(245, 215, 110, 0.45)
-        );
+            rgba(245, 215, 110, 0.45));
 
     box-shadow:
         0 25px 70px rgba(212, 175, 55, 0.08);
@@ -611,16 +584,14 @@ section {
 
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: clamp(
-        1.8rem,
-        3.5vw,
-        2.7rem
-    );
+    font-size: clamp(1.8rem,
+            3.5vw,
+            2.7rem);
 
     line-height: 1.15;
 }
 
-.about-content > p {
+.about-content>p {
     color: var(--muted);
 
     line-height: 1.9;
@@ -632,10 +603,8 @@ section {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            2,
-            minmax(0, 1fr)
-        );
+        repeat(2,
+            minmax(0, 1fr));
 
     gap: 14px;
 
@@ -655,11 +624,9 @@ section {
     text-decoration: none;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             rgba(25, 25, 25, 0.95),
-            rgba(12, 12, 12, 0.95)
-        );
+            rgba(12, 12, 12, 0.95));
 
     border: 1px solid var(--gold-border);
 
@@ -680,7 +647,7 @@ section {
         0 12px 35px rgba(212, 175, 55, 0.08);
 }
 
-.info-item > i {
+.info-item>i {
     width: 43px;
     height: 43px;
 
@@ -753,11 +720,9 @@ section {
     overflow: hidden;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             rgba(24, 24, 24, 0.96),
-            rgba(10, 10, 10, 0.96)
-        );
+            rgba(10, 10, 10, 0.96));
 
     border: 1px solid var(--line);
 
@@ -768,7 +733,7 @@ section {
     padding: 30px;
 
     border-radius: 20px;
-
+    text-decoration: none;
     transition:
         transform 0.28s ease,
         border-color 0.28s ease,
@@ -798,14 +763,11 @@ section {
     color: var(--primary);
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             rgba(212, 175, 55, 0.14),
-            rgba(212, 175, 55, 0.04)
-        );
+            rgba(212, 175, 55, 0.04));
 
-    border: 1px solid
-        rgba(212, 175, 55, 0.18);
+    border: 1px solid rgba(212, 175, 55, 0.18);
 
     border-radius: 17px;
 
@@ -837,7 +799,7 @@ section {
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
-    transition: 
+    transition:
         max-height 0.4s ease,
         opacity 0.3s ease,
         margin 0.3s ease,
@@ -875,11 +837,9 @@ section {
 
 .projects {
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             #0b0b0b,
-            #050505
-        );
+            #050505);
 }
 
 .project-card {
@@ -1121,16 +1081,12 @@ section {
 
 .contact {
     background:
-        radial-gradient(
-            circle at 15% 75%,
+        radial-gradient(circle at 15% 75%,
             rgba(212, 175, 55, 0.08),
-            transparent 25rem
-        ),
-        linear-gradient(
-            180deg,
+            transparent 25rem),
+        linear-gradient(180deg,
             #0b0b0b,
-            #060606
-        );
+            #060606);
 }
 
 .contact-grid {
@@ -1141,8 +1097,7 @@ section {
     display: grid;
 
     grid-template-columns:
-        0.9fr
-        1.1fr;
+        0.9fr 1.1fr;
 
     gap: 60px;
 
@@ -1154,16 +1109,14 @@ section {
 
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: clamp(
-        2rem,
-        3.5vw,
-        2.8rem
-    );
+    font-size: clamp(2rem,
+            3.5vw,
+            2.8rem);
 
     line-height: 1.12;
 }
 
-.contact-content > p {
+.contact-content>p {
     max-width: 530px;
 
     color: var(--muted);
@@ -1248,11 +1201,9 @@ section {
     padding: 36px;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             rgba(25, 25, 25, 0.98),
-            rgba(10, 10, 10, 0.98)
-        );
+            rgba(10, 10, 10, 0.98));
 
     border:
         1px solid rgba(212, 175, 55, 0.18);
@@ -1343,8 +1294,7 @@ section {
         rgba(212, 175, 55, 0.75);
 
     box-shadow:
-        0 0 0 4px
-        rgba(212, 175, 55, 0.07);
+        0 0 0 4px rgba(212, 175, 55, 0.07);
 }
 
 .form-group textarea {
@@ -1387,11 +1337,9 @@ section {
     color: #080706;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--primary),
-            var(--primary-2)
-        );
+            var(--primary-2));
 
     font: inherit;
 
@@ -1407,8 +1355,7 @@ section {
     transform: translateY(-3px);
 
     box-shadow:
-        0 18px 40px
-        rgba(212, 175, 55, 0.20);
+        0 18px 40px rgba(212, 175, 55, 0.20);
 }
 
 .submit-btn:disabled {
@@ -1500,8 +1447,7 @@ footer p {
     transform: translateY(-4px);
 
     box-shadow:
-        0 10px 25px
-        rgba(212, 175, 55, 0.25);
+        0 10px 25px rgba(212, 175, 55, 0.25);
 }
 
 /* ================= RESPONSIVE ================= */
