@@ -27,17 +27,13 @@ body {
     font-family: "DM Sans", sans-serif;
     color: var(--text);
     background:
-        radial-gradient(
-            circle at 12% 5%,
+        radial-gradient(circle at 12% 5%,
             rgba(90, 167, 255, 0.10),
-            transparent 26rem
-        ),
+            transparent 26rem),
 
-        radial-gradient(
-            circle at 88% 18%,
+        radial-gradient(circle at 88% 18%,
             rgba(66, 232, 213, 0.10),
-            transparent 28rem
-        ),
+            transparent 28rem),
 
         var(--bg);
 
@@ -255,11 +251,9 @@ a {
 
 
 .home h1 span {
-    background: linear-gradient(
-        100deg,
-        var(--primary),
-        var(--primary-2)
-    );
+    background: linear-gradient(100deg,
+            var(--primary),
+            var(--primary-2));
 
     -webkit-background-clip: text;
 
@@ -335,11 +329,9 @@ a {
 .btn-primary {
     color: #06221f;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary),
-        #79f2e6
-    );
+    background: linear-gradient(135deg,
+            var(--primary),
+            #79f2e6);
 }
 
 
@@ -439,12 +431,10 @@ a {
 
     border-radius: 50%;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--primary-2),
-        var(--primary)
-    );
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--primary-2),
+            var(--primary));
 
     z-index: 2;
 }
@@ -532,12 +522,34 @@ a {
 
 /* ================= ABOUT ================= */
 
+/* Download Resume Button */
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #8e44ad, #e84393);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(142, 68, 173, 0.35);
+}
+
+.resume-btn i {
+    font-size: 16px;
+}
+
 .about {
-    background: linear-gradient(
-        180deg,
-        rgba(12, 18, 32, 0.82),
-        rgba(7, 11, 20, 0.95)
-    );
+    background: linear-gradient(180deg,
+            rgba(12, 18, 32, 0.82),
+            rgba(7, 11, 20, 0.95));
 }
 
 
@@ -570,11 +582,9 @@ a {
 
     border-radius: 28px;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--primary-2)
-    );
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--primary-2));
 }
 
 
@@ -598,7 +608,7 @@ a {
 }
 
 
-.about-content > p {
+.about-content>p {
     color: var(--muted);
 
     line-height: 1.9;
@@ -636,7 +646,7 @@ a {
 }
 
 
-.info-item > i {
+.info-item>i {
     width: 43px;
     height: 43px;
 
@@ -691,11 +701,9 @@ a {
 .skill-card,
 .project-card,
 .education-card {
-    background: linear-gradient(
-        145deg,
-        rgba(20, 30, 49, 0.92),
-        rgba(12, 18, 31, 0.92)
-    );
+    background: linear-gradient(145deg,
+            rgba(20, 30, 49, 0.92),
+            rgba(12, 18, 31, 0.92));
 
     border: 1px solid var(--line);
 }
@@ -758,11 +766,9 @@ a {
 /* ================= PROJECTS ================= */
 
 .projects {
-    background: linear-gradient(
-        180deg,
-        var(--bg-soft),
-        var(--bg)
-    );
+    background: linear-gradient(180deg,
+            var(--bg-soft),
+            var(--bg));
 }
 
 
@@ -954,11 +960,9 @@ a {
 /* ================= CONTACT ================= */
 
 .contact {
-    background: linear-gradient(
-        180deg,
-        var(--bg-soft),
-        #080d18
-    );
+    background: linear-gradient(180deg,
+            var(--bg-soft),
+            #080d18);
 }
 
 
@@ -988,7 +992,7 @@ a {
 }
 
 
-.contact-content > p {
+.contact-content>p {
     color: var(--muted);
 
     line-height: 1.9;
@@ -1060,11 +1064,9 @@ a {
 .contact-form-card {
     padding: 36px;
 
-    background: linear-gradient(
-        145deg,
-        rgba(24, 36, 58, 0.96),
-        rgba(11, 17, 29, 0.98)
-    );
+    background: linear-gradient(145deg,
+            rgba(24, 36, 58, 0.96),
+            rgba(11, 17, 29, 0.98));
 
     border: 1px solid rgba(255, 255, 255, 0.10);
 
@@ -1142,8 +1144,7 @@ a {
     border-color: var(--primary);
 
     box-shadow:
-        0 0 0 4px
-        rgba(66, 232, 213, 0.07);
+        0 0 0 4px rgba(66, 232, 213, 0.07);
 }
 
 
@@ -1182,11 +1183,9 @@ a {
 
     color: #06221f;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary),
-        #80f2e7
-    );
+    background: linear-gradient(135deg,
+            var(--primary),
+            #80f2e7);
 
     font: inherit;
 
