@@ -2011,3 +2011,124 @@ footer p {
         padding: 18px;
     }
 }
+
+/* React Notes Page */
+
+.react-notes-page {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+}
+
+.react-notes-page .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+}
+
+.react-notes-page .back-btn:hover {
+    transform: translateX(-5px);
+    color: var(--primary-2);
+}
+
+.react-notes-page .skill-notes-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.react-notes-page .skill-notes-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: grid;
+    place-items: center;
+    color: var(--primary);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold-border);
+    border-radius: 20px;
+    font-size: 2.5rem;
+    transition: 0.3s ease;
+}
+
+.react-notes-page .skill-notes-icon:hover {
+    transform: translateY(-5px) scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.18);
+}
+
+.react-notes-page .skill-notes-header h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.react-notes-page .skill-notes-header p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.react-notes-page .skill-notes-content h2 {
+    font-family: "Space Grotesk", sans-serif;
+    margin-bottom: 20px;
+}
+
+.react-notes-page .note-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.react-notes-page .note-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.15);
+}
+
+.react-notes-page .note-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.react-notes-page .note-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.react-notes-page .note-card code {
+    color: var(--primary-2);
+}
+
+.react-notes-page .note-card pre {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    .react-notes-page {
+        padding: 30px 15px 60px;
+    }
+
+    .react-notes-page .skill-notes-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .react-notes-page .note-card {
+        padding: 18px;
+    }
+}
