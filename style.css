@@ -1808,12 +1808,3 @@ footer p {
 
 }
 
-.note-card {
-    border: 2px solid gold !important;
-}
-
-.note-card:hover {
-    transform: translateY(-10px) !important;
-    border-color: gold !important;
-    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4) !important;
-}
