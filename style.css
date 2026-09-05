@@ -828,7 +828,37 @@ section {
     line-height: 1.75;
 }
 
+/* Skills cards - About Me jaisa compact size */
 
+.skills-grid {
+    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.skill-card {
+    padding: 18px;
+    min-height: 0;
+    height: auto;
+    border-radius: 15px;
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 14px;
+    font-size: 1.35rem;
+}
+
+.skill-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.skill-card p {
+    font-size: 0.80rem;
+    line-height: 1.5;
+}
 
 /* ================= PROJECTS ================= */
 
