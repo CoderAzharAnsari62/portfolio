@@ -153,3 +153,17 @@ if (contactForm && submitButton && formStatus) {
     );
 
 }
+
+// Skill card click/touch
+
+document.querySelectorAll(".skill-card").forEach(card => {
+
+    const notes = card.querySelector(".skill-topics");
+
+    if (!notes) return;
+
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+
+});
