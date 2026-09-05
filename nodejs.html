@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Node.js Notes | Azhar Ansari</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="nodejs-notes-page">
+
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Skills
+        </a>
+
+        <header class="skill-notes-header">
+
+            <div class="skill-notes-icon">
+                <i class="fa-brands fa-node-js"></i>
+            </div>
+
+            <h1>Node.js</h1>
+
+            <p>
+                Learn the fundamentals of Node.js, including modules,
+                npm, servers, APIs and backend development.
+            </p>
+
+        </header>
+
+        <section class="skill-notes-content">
+
+            <h2>Node.js Notes</h2>
+
+            <div class="note-card">
+                <h3>What is Node.js?</h3>
+                <p>
+                    Node.js is a JavaScript runtime environment that allows
+                    JavaScript to run outside the browser. It is commonly
+                    used for backend and server-side development.
+                </p>
+            </div>
+
+            <div class="note-card">
+                <h3>Why is Node.js used?</h3>
+                <p>
+                    Node.js is used to build web servers, REST APIs,
+                    real-time applications and backend services using
+                    JavaScript.
+                </p>
+            </div>
+
+            <div class="note-card">
+                <h3>Node.js Modules</h3>
+                <p>
+                    Modules are reusable pieces of code. Node.js provides
+                    built-in modules and also allows developers to create
+                    their own modules.
+                </p>
+
+                <pre><code>
+const fs = require("fs");
+
+const data = fs.readFileSync("example.txt", "utf8");
+
+console.log(data);
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>npm</h3>
+                <p>
+                    npm stands for Node Package Manager. It is used to install,
+                    manage and share JavaScript packages for Node.js projects.
+                </p>
+
+                <pre><code>
+npm init -y
+
+npm install express
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Creating a Server</h3>
+                <p>
+                    Node.js provides the HTTP module that can be used to
+                    create a basic web server.
+                </p>
+
+                <pre><code>
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+    res.write("Hello from Node.js!");
+    res.end();
+});
+
+server.listen(5000, () => {
+    console.log("Server running on port 5000");
+});
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Express.js</h3>
+                <p>
+                    Express.js is a popular Node.js framework used to create
+                    web servers and APIs more easily.
+                </p>
+
+                <pre><code>
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Hello World!");
+});
+
+app.listen(5000, () => {
+    console.log("Server running on port 5000");
+});
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>REST API</h3>
+                <p>
+                    A REST API allows applications to communicate through
+                    HTTP requests such as GET, POST, PUT and DELETE.
+                </p>
+
+                <pre><code>
+app.get("/users", (req, res) => {
+    res.json([
+        { name: "Azhar" },
+        { name: "Developer" }
+    ]);
+});
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Middleware</h3>
+                <p>
+                    Middleware functions run during the request-response
+                    cycle. They can be used for logging, authentication,
+                    validation and other backend tasks.
+                </p>
+
+                <pre><code>
+app.use(express.json());
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Environment Variables</h3>
+                <p>
+                    Environment variables are used to store configuration
+                    values such as API keys, database URLs and port numbers.
+                    Sensitive values should not be committed to GitHub.
+                </p>
+
+                <pre><code>
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+                </code></pre>
+            </div>
+
+            <div class="note-card">
+                <h3>Simple Example</h3>
+
+                <pre><code>
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.json({
+        message: "Node.js API is working!"
+    });
+});
+
+app.listen(5000, () => {
+    console.log("Server running on port 5000");
+});
+                </code></pre>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
